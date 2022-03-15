@@ -2,6 +2,8 @@ package dao;
 
 import java.util.List;
 
+import exceptions.EmployeeNotFound;
+import exceptions.SystemException;
 import pojo.AdminPojo;
 import pojo.EmployeePojo;
 import pojo.ExpensePojo;
@@ -10,29 +12,33 @@ import pojo.PendingExpensesPojo;
 
 public interface AdminDao {
 	
-	EmployeePojo fetchEmployee(int empId);
+	EmployeePojo fetchEmployee(int empId) throws SystemException;
 	
-	AdminPojo fetchAdmin(int adminId);
+	AdminPojo fetchAdmin(int adminId) throws SystemException;
 	
-	List<EmployeePojo> fetchAllEmployees();
+	List<EmployeePojo> fetchAllEmployees() throws SystemException;
 	
-	List<ExpensePojo> fetchAllExpenses(int empId);
+	List<ExpensePojo> fetchAllExpenses(int empId) throws SystemException;
 	
-	List<ExpensePojo> fetchAllPendingExpenses();
+	List<ExpensePojo> fetchAllPendingExpenses() throws SystemException;
 	
-	List<ExpensePojo> fetchAllFinalExpenses();
+	List<ExpensePojo> fetchAllFinalExpenses() throws SystemException;
 	
-	PendingExpensesPojo fetchPendingExpense(int expenseId);
+	PendingExpensesPojo fetchPendingExpense(int expenseId) throws SystemException;
 	
-	FinalExpensesPojo approveExpense(PendingExpensesPojo pendPojo);
+	FinalExpensesPojo approveExpense(PendingExpensesPojo pendPojo) throws SystemException;
 	
-	FinalExpensesPojo denyExpense(PendingExpensesPojo pendPojo);
+	FinalExpensesPojo denyExpense(PendingExpensesPojo pendPojo) throws SystemException;
 	
-	ExpensePojo deletePendingExpense(int expenseId);
+	ExpensePojo deletePendingExpense(int expenseId) throws SystemException;
 	
-	ExpensePojo fetchNewestExpense();
+	ExpensePojo fetchNewestExpense() throws SystemException;
 	
-	AdminPojo loginAdmin(AdminPojo pojoIn);
+	AdminPojo loginAdmin(AdminPojo pojoIn) throws SystemException;
+	
+	EmployeePojo loginEmployee(EmployeePojo pojoIn) throws SystemException;
+	
+	int pendingAmount() throws SystemException;
 	
 	default void exitApplication() {
 		DBUtil.closeConnection();

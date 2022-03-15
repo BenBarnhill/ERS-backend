@@ -9,10 +9,11 @@ public class PendingExpensesPojo {
 	private int pendingRequest;
 	private double pendingAmount;
 	private String pendingReason;
-	private Timestamp pendingCreated;
+	private String pendingCreated;
 	private String pendingResolved;
 	private int pendingResponse;
 	private String pendingStatus;
+	
 	
 	public PendingExpensesPojo() {
 		super();
@@ -20,7 +21,7 @@ public class PendingExpensesPojo {
 	}
 
 	public PendingExpensesPojo(int pendingId, int pendingRequest, double pendingAmount, String pendingReason,
-			Timestamp pendingCreated, String pendingResolved, int pendingResponse, String pendingStatus) {
+			String pendingCreated, String pendingResolved, int pendingResponse, String pendingStatus) {
 		super();
 		this.pendingId = pendingId;
 		this.pendingRequest = pendingRequest;
@@ -64,11 +65,11 @@ public class PendingExpensesPojo {
 		this.pendingReason = pendingReason;
 	}
 
-	public Timestamp getPendingCreated() {
+	public String getPendingCreated() {
 		return pendingCreated;
 	}
 
-	public void setPendingCreated(Timestamp pendingCreated) {
+	public void setPendingCreated(String pendingCreated) {
 		this.pendingCreated = pendingCreated;
 	}
 
@@ -103,8 +104,6 @@ public class PendingExpensesPojo {
 				+ ", pendingResolved=" + pendingResolved + ", pendingResponse=" + pendingResponse + ", pendingStatus="
 				+ pendingStatus + "]";
 	}
-	
-	
 	
 }
 	

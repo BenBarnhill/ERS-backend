@@ -9,7 +9,7 @@ public class FinalExpensesPojo {
 	private int finalRequest;
 	private double finalAmount;
 	private String finalReason;
-	private Timestamp finalCreated;
+	private String finalCreated;
 	private Timestamp finalResolved;
 	private int finalResponse;
 	private String finalStatus;
@@ -19,8 +19,8 @@ public class FinalExpensesPojo {
 		// TODO Auto-generated constructor stub
 	}
 
-	public FinalExpensesPojo(int finalId, int finalRequest, double finalAmount, String finalReason,
-			Timestamp finalCreated, Timestamp finalResolved, int finalResponse, String finalStatus) {
+	public FinalExpensesPojo(int finalId, int finalRequest, double finalAmount, String finalReason, String finalCreated,
+			Timestamp finalResolved, int finalResponse, String finalStatus) {
 		super();
 		this.finalId = finalId;
 		this.finalRequest = finalRequest;
@@ -64,11 +64,11 @@ public class FinalExpensesPojo {
 		this.finalReason = finalReason;
 	}
 
-	public Timestamp getFinalCreated() {
+	public String getFinalCreated() {
 		return finalCreated;
 	}
 
-	public void setFinalCreated(Timestamp finalCreated) {
+	public void setFinalCreated(String finalCreated) {
 		this.finalCreated = finalCreated;
 	}
 
@@ -102,6 +102,9 @@ public class FinalExpensesPojo {
 				+ finalAmount + ", finalReason=" + finalReason + ", finalCreated=" + finalCreated + ", finalResolved="
 				+ finalResolved + ", finalResponse=" + finalResponse + ", finalStatus=" + finalStatus + "]";
 	}
+	
+	
+	
 	
 	
 	

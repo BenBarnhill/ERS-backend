@@ -9,6 +9,7 @@ public class AdminPojo {
 	private long adminContact;
 	private String adminEmail;
 	private String adminAddress;
+	private String adminRole;
 	
 	public AdminPojo() {
 		super();
@@ -16,7 +17,7 @@ public class AdminPojo {
 	}
 
 	public AdminPojo(int adminId, String adminPassword, String adminFirstName, String adminLastName, long adminContact,
-			String adminEmail, String adminAddress) {
+			String adminEmail, String adminAddress, String adminRole) {
 		super();
 		this.adminId = adminId;
 		this.adminPassword = adminPassword;
@@ -25,6 +26,7 @@ public class AdminPojo {
 		this.adminContact = adminContact;
 		this.adminEmail = adminEmail;
 		this.adminAddress = adminAddress;
+		this.adminRole = adminRole;
 	}
 
 	public int getAdminId() {
@@ -83,12 +85,21 @@ public class AdminPojo {
 		this.adminAddress = adminAddress;
 	}
 
+	public String getAdminRole() {
+		return adminRole;
+	}
+
+	public void setAdminRole(String adminRole) {
+		this.adminRole = adminRole;
+	}
+
 	@Override
 	public String toString() {
 		return "AdminPojo [adminId=" + adminId + ", adminPassword=" + adminPassword + ", adminFirstName="
 				+ adminFirstName + ", adminLastName=" + adminLastName + ", adminContact=" + adminContact
-				+ ", adminEmail=" + adminEmail + ", adminAddress=" + adminAddress + "]";
+				+ ", adminEmail=" + adminEmail + ", adminAddress=" + adminAddress + ", adminRole=" + adminRole + "]";
 	}
+	
 	
 	
 	
