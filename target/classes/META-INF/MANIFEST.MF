@@ -16,6 +16,6 @@ Class-Path: lib/javalin-4.3.0.jar lib/jetty-server-9.4.44.v20210927.jar
  e-2.0.0-alpha5.jar lib/jackson-databind-2.12.4.jar lib/jackson-annotati
  ons-2.12.4.jar lib/jackson-core-2.12.4.jar lib/postgresql-42.2.14.jar l
  ib/log4j-api-2.11.2.jar lib/log4j-core-2.11.2.jar
-Main-Class: BookMain
+Main-Class: ERSMain
 Created-By: Maven Integration for Eclipse
 
