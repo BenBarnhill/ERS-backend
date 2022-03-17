@@ -11,13 +11,13 @@ pipeline {
         stage('build code') {
             steps {
                 // Run Maven on a Unix agent.
-                sh "mvn clean package"
+                sh "sudo mvn clean package"
             }
         }
         stage('staging') {
             steps {
-               sh "docker-compose down"    
-               sh "docker-compose up -d"
+               sh "sudo docker-compose down"    
+               sh "sudo docker-compose up -d"
             }
         }
     }
