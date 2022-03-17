@@ -16,7 +16,6 @@ pipeline {
         }
         stage('staging') {
             steps {
-               sh "sudo chmod 666 /var/run/docker.sock"
                sh "docker-compose down"    
                sh "docker-compose up --detach"
             }
