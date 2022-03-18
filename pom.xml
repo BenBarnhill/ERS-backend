@@ -74,7 +74,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/endpoints/</classpathPrefix>
+							<classpathPrefix>lib/</classpathPrefix>
 							<mainClass>ERSMain</mainClass>
 						</manifest>
 					</archive>

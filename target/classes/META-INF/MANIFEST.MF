@@ -1,25 +1,21 @@
 Manifest-Version: 1.0
 Built-By: bconn
 Build-Jdk: 17.0.2
-Class-Path: lib/endpoints/javalin-4.3.0.jar lib/endpoints/jetty-server-9
- .4.44.v20210927.jar lib/endpoints/javax.servlet-api-3.1.0.jar lib/endpo
- ints/jetty-http-9.4.44.v20210927.jar lib/endpoints/jetty-util-9.4.44.v2
- 0210927.jar lib/endpoints/jetty-io-9.4.44.v20210927.jar lib/endpoints/j
- etty-webapp-9.4.44.v20210927.jar lib/endpoints/jetty-xml-9.4.44.v202109
- 27.jar lib/endpoints/jetty-servlet-9.4.44.v20210927.jar lib/endpoints/j
- etty-security-9.4.44.v20210927.jar lib/endpoints/jetty-util-ajax-9.4.44
- .v20210927.jar lib/endpoints/websocket-server-9.4.44.v20210927.jar lib/
- endpoints/websocket-common-9.4.44.v20210927.jar lib/endpoints/websocket
- -api-9.4.44.v20210927.jar lib/endpoints/websocket-client-9.4.44.v202109
- 27.jar lib/endpoints/jetty-client-9.4.44.v20210927.jar lib/endpoints/we
- bsocket-servlet-9.4.44.v20210927.jar lib/endpoints/kotlin-stdlib-jdk8-1
- .5.31.jar lib/endpoints/kotlin-stdlib-1.5.31.jar lib/endpoints/annotati
- ons-13.0.jar lib/endpoints/kotlin-stdlib-common-1.5.31.jar lib/endpoint
- s/kotlin-stdlib-jdk7-1.5.31.jar lib/endpoints/slf4j-api-2.0.0-alpha5.ja
- r lib/endpoints/slf4j-simple-2.0.0-alpha5.jar lib/endpoints/jackson-dat
- abind-2.12.4.jar lib/endpoints/jackson-annotations-2.12.4.jar lib/endpo
- ints/jackson-core-2.12.4.jar lib/endpoints/postgresql-42.2.14.jar lib/e
- ndpoints/log4j-api-2.11.2.jar lib/endpoints/log4j-core-2.11.2.jar
+Class-Path: lib/javalin-4.3.0.jar lib/jetty-server-9.4.44.v20210927.jar 
+ lib/javax.servlet-api-3.1.0.jar lib/jetty-http-9.4.44.v20210927.jar lib
+ /jetty-util-9.4.44.v20210927.jar lib/jetty-io-9.4.44.v20210927.jar lib/
+ jetty-webapp-9.4.44.v20210927.jar lib/jetty-xml-9.4.44.v20210927.jar li
+ b/jetty-servlet-9.4.44.v20210927.jar lib/jetty-security-9.4.44.v2021092
+ 7.jar lib/jetty-util-ajax-9.4.44.v20210927.jar lib/websocket-server-9.4
+ .44.v20210927.jar lib/websocket-common-9.4.44.v20210927.jar lib/websock
+ et-api-9.4.44.v20210927.jar lib/websocket-client-9.4.44.v20210927.jar l
+ ib/jetty-client-9.4.44.v20210927.jar lib/websocket-servlet-9.4.44.v2021
+ 0927.jar lib/kotlin-stdlib-jdk8-1.5.31.jar lib/kotlin-stdlib-1.5.31.jar
+  lib/annotations-13.0.jar lib/kotlin-stdlib-common-1.5.31.jar lib/kotli
+ n-stdlib-jdk7-1.5.31.jar lib/slf4j-api-2.0.0-alpha5.jar lib/slf4j-simpl
+ e-2.0.0-alpha5.jar lib/jackson-databind-2.12.4.jar lib/jackson-annotati
+ ons-2.12.4.jar lib/jackson-core-2.12.4.jar lib/postgresql-42.2.14.jar l
+ ib/log4j-api-2.11.2.jar lib/log4j-core-2.11.2.jar
 Main-Class: ERSMain
 Created-By: Maven Integration for Eclipse
 
