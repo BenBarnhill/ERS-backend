@@ -20,7 +20,7 @@ public class DBUtil {
 		// initializing singular instance of connection object
 		    
 		       
-		String connectionUrl = "jdbc:postgresql://ip-172-31-29-69.ec2.internal:8888/project1";
+		String connectionUrl = "jdbc:postgresql://ip-172-31-91-48.ec2.internal:8888/project1";
 		String username = "postgres";
 		String password = "mysecretpassword";
 		if (conn == null) {
