@@ -53,7 +53,7 @@ PRIMARY KEY(pend_id),
 CONSTRAINT fk_empId FOREIGN KEY(pend_request) REFERENCES employee_details(emp_id) ON DELETE NO ACTION, 
 CONSTRAINT fk_adminId FOREIGN KEY(pend_response) REFERENCES admin_details(admin_id) ON DELETE NO ACTION);
 
-INSERT INTO reimbursements_pending(DEFAULT, 
+INSERT INTO reimbursements_pending VALUES(DEFAULT, 
 1, 
 435.87, 
 'Work Trip', 
