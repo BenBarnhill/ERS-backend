@@ -19,10 +19,10 @@ public class DBUtil {
 	static Connection getConnection() {
 		// initializing singular instance of connection object
 		    
-		       
+//		String connectionUrl = "jdbc:postgresql://localhost:5432/project2";
 		String connectionUrl = "jdbc:postgresql://ip-172-31-91-48.ec2.internal:8888/project1";
 		String username = "postgres";
-		String password = "mysecretpassword";
+		String password = "password";
 		if (conn == null) {
 			try {
 				conn = DriverManager.getConnection(connectionUrl, username,
